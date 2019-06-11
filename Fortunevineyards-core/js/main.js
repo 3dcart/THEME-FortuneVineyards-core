@@ -137,6 +137,7 @@ jQuery(document).ready(function () {
     		location.href = this.href;
     	});
     }
+	sameHeight();
 });
 
 jQuery(window).load(function () {
@@ -144,6 +145,7 @@ jQuery(window).load(function () {
 });
 jQuery(window).resize(function () {
     moveMenu();
+	sameHeight();
 });
 
 jQuery(function ($) {
@@ -183,3 +185,9 @@ jQuery(document).ready(function (e) {
 jQuery(window).resize(function (e) {
     initAnimations();
 });
+
+function sameHeight() {
+	var containerHeight = $('.site-container').innerHeight();
+	$('#leftBar').css('min-height', containerHeight);
+}
+
