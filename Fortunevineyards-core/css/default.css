@@ -275,6 +275,14 @@ h1 {
     position: absolute;
     right: 5px;
 }
+@media (min-width: 992px){
+.my-account .beta-col {
+    padding: 0 70px 0 5%;
+}
+.my-account .alpha-col {
+    padding: 0 5% 0 70px;
+}
+}
 @media (max-width: 768px) {
 }
 @media (max-width: 991px) {
