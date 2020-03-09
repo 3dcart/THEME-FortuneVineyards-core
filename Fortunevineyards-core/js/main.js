@@ -93,11 +93,11 @@ function moveMenu() {
 
     if (respWidth < 992) {
         jQuery('#logo').appendTo('#logo-place');
-        jQuery('#searchBox2').appendTo('#search-mobile');
+        jQuery('#searchBox').appendTo('#search-mobile');
     }
     else {
         jQuery('#logo').appendTo('#logo-desk');
-        jQuery('#searchBox2').appendTo('#modal-body-mobile');
+        jQuery('#searchBox').appendTo('#modal-body-mobile');
     }
 }
 
