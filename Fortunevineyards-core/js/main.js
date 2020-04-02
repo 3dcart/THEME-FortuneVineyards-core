@@ -137,7 +137,7 @@ jQuery(document).ready(function () {
     		location.href = this.href;
     	});
     }
-	sameHeight();
+	//sameHeight();
 });
 
 jQuery(window).load(function () {
@@ -145,7 +145,7 @@ jQuery(window).load(function () {
 });
 jQuery(window).resize(function () {
     moveMenu();
-	sameHeight();
+	//sameHeight();
 });
 
 jQuery(function ($) {
