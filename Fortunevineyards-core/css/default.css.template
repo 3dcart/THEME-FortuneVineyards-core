@@ -22,6 +22,27 @@ footer {
   flex-shrink: 0;
 }
 */
+.homepage-blog-posts .post-image-container img {
+    height: 200px;
+}
+.homepage-blog-posts div#postContent {
+    height: 127px;
+}
+.category-toolbar a .icon-bar {
+    background: #fff;
+}
+.category-toolbar a#grid-view .icon-bar:after, .category-toolbar a#grid-view .icon-bar:before, .category-toolbar a#list-view .icon-bar:before {
+    background: #fff;
+}
+.product-items.productList .product-item .img a {
+    position: initial;
+}
+@media (max-width: 991px){
+.product-items.productList .product-item .img {
+    padding-right: 0;
+    width: 32%;
+}
+}
 .mailinglist-input.form-control:focus,
 .form-control.search-text:focus{
     outline: 0;
