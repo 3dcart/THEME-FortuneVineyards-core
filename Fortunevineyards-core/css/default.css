@@ -22,6 +22,9 @@
     width: 32%;
 }
 }
+section#message p.notice, section#error p.notice {
+    color: #fff;
+}
 .mailinglist-input.form-control:focus,
 .form-control.search-text:focus{
     outline: 0;

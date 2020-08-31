@@ -1,27 +1,7 @@
 /*
 ** Bootstrap over-rides
 */
-/*
-html, body {
-  height: 100%;
-}
-body {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-}
-.group-flex {
-  display: flex;
-  height: 100%;
-  flex-direction: row;
-}
-.page-content, .main-block {
-  flex: 1 0 auto;
-}
-footer {
-  flex-shrink: 0;
-}
-*/
+
 .homepage-blog-posts .post-image-container img {
     height: 200px;
 }
@@ -42,6 +22,9 @@ footer {
     padding-right: 0;
     width: 32%;
 }
+}
+section#message p.notice, section#error p.notice {
+    color: #fff;
 }
 .mailinglist-input.form-control:focus,
 .form-control.search-text:focus{
