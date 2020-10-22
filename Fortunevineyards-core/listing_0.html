@@ -739,7 +739,7 @@
                         <div class="waitinglist sub-section">
                             <button id="waitinglist-btn" type="button" class="btn btn-default btn-inverse btn-addcart"><i class="icon-clipboard"></i> Put me on the Waiting List</button>
                         </div>
-                        [waitinglist_modal]
+                        [blk_modal_wt_lst]
                         <!--END: waitinglist-->
                         <!--START: waitinglist_advancedoptions-->
                         <div id="divWaitlist_AdvancedOptions" style="display:none;">
@@ -779,6 +779,29 @@
                                                             <input type="text" class="form-control" id="waitinglist-phone" value="[phone]">
                                                         </div>
                                                     </div>
+													
+													<div  class="col-md-12">
+							                            <div class="form-group">
+								                            <!--START: captcha-->
+								                            <label class="small-label">Verification: <span class="required">*</span></label>
+								                            <div class="simple-captcha">
+									                            <div class="captcha" style="margin-bottom:10px;"><img src="admin/image_pw.asp" width="148"/></div>
+
+									                            <div class="captcha-text">Type the word above...</div>
+									                            <input type="text" class="form-control" name="ramdomWord" id="ramdomWord" autocomplete="off" value="" size="25" maxlength="30" tabindex="6" />
+								                            </div>
+								                            <!--END: captcha-->
+
+								                            <!--START: recaptcharobot-->
+								                            <div id="waitinglist-recaptchaRobot" class="recaptchaRobot" 
+									                            data-sitekey="[recaptcha_key]"
+									                            data-size="[recaptcha_robot_size]"
+									                            data-type="[recaptcha_robot_type]"
+									                            data-theme="[recaptcha_robot_theme]"
+									                            data-callback="waitinglist_[recaptcha_robot_size]"></div>
+								                            <!--END: recaptcharobot-->
+							                            </div>
+						                            </div>
 
                                                 </div>
                                             </div>
