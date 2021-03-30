@@ -1,7 +1,21 @@
 /*
 ** Bootstrap over-rides
 */
-
+#skip a
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+#skip a:focus
+{
+position:static;
+width:auto;
+height:auto;
+}
 .homepage-blog-posts .post-image-container img {
     height: 200px;
 }
@@ -822,7 +836,7 @@ span.freeshipping {
     text-align: center;
     top: 2px;
     right: 17px;
-    background: #d04b64;
+    background: #96273B;
     color: #fff;
     font-size: 14px;
 }
@@ -870,7 +884,7 @@ span.freeshipping {
     background-color: #[bg_color];
     padding: 45px 0 5px;
 }
-#home .products-section h2 {
+#home .products-section h2,#home .products-section h1 {
     color: #[headings_color];
     font-size: [heading_base_size]px;
     line-height: 1.35;
@@ -883,7 +897,7 @@ span.freeshipping {
     border-bottom: 4px double #[primary-accent];
     text-align: center;
 }
-.products-section h2 {
+.products-section h2,.products-section h1 {
     text-align: left;
     font-size: 25px;
     line-height: 1.35;
@@ -893,7 +907,7 @@ span.freeshipping {
     margin: 0 0 25px;
     position: relative;
 }
-#home .products-section h2:after {
+#home .products-section h2:after,#home .products-section h1:after {
     content: inherit;
     position: inherit;
     top: inherit;
@@ -902,7 +916,7 @@ span.freeshipping {
     background: inherit;
     width: inherit ;
 }
-.products-section h2:after {
+.products-section h2:after,.products-section h1:after {
     content: '';
     position: absolute;
     top: 100%;

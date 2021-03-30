@@ -1,6 +1,21 @@
 /*
 ** Bootstrap over-rides
 */
+#skip a
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+#skip a:focus
+{
+position:static;
+width:auto;
+height:auto;
+}
 .homepage-blog-posts .post-image-container img {
     height: 200px;
 }
@@ -593,7 +608,7 @@ ul.extrapages li a {
     padding-top: 0;
     padding-bottom: 0;
     text-align: left;
-    color: #fff;
+    color: #000;
     font-size: 12px;
     font-weight: 500;
     line-height: inherit;
@@ -644,7 +659,7 @@ ul.extrapages li a {
 }
 .mailinglist-submit {
     background-color: #fff;
-    color: #ac9356 !important;
+    color: #5E502C !important;
     border-color: #fff !important;
     float: right;
     width: 107px;
@@ -706,7 +721,7 @@ ul.social-icons li.social-icons-label {
     margin: 0;
 }
 .social-icons li a {
-    color: #fff;
+    color: #000;
     background-color: transparent;
     width: 32px;
     height: 40px;
@@ -829,7 +844,7 @@ span.freeshipping {
     text-align: center;
     top: 2px;
     right: 17px;
-    background: #d04b64;
+    background: #96273B;
     color: #fff;
     font-size: 14px;
 }
@@ -843,7 +858,7 @@ span.freeshipping {
     max-width: 192px;
     line-height: 30px;
     background: #ac9356;
-    color: #fff;
+    color:#000000;
 }
 .product-item .name {
     margin-bottom: 15px;
@@ -876,7 +891,7 @@ span.freeshipping {
     background-color: #2e2a25;
     padding: 45px 0 5px;
 }
-#home .products-section h2 {
+#home .products-section h2,#home .products-section h1 {
     color: #bababa;
     font-size: 22px;
     line-height: 1.35;
@@ -889,7 +904,7 @@ span.freeshipping {
     border-bottom: 4px double #63563a;
     text-align: center;
 }
-.products-section h2 {
+.products-section h2,.products-section h1 {
     text-align: left;
     font-size: 25px;
     line-height: 1.35;
@@ -899,7 +914,7 @@ span.freeshipping {
     margin: 0 0 25px;
     position: relative;
 }
-#home .products-section h2:after {
+#home .products-section h2:after,#home .products-section h1:after {
     content: inherit;
     position: inherit;
     top: inherit;
@@ -908,7 +923,7 @@ span.freeshipping {
     background: inherit;
     width: inherit ;
 }
-.products-section h2:after {
+.products-section h2:after,.products-section h1:after {
     content: '';
     position: absolute;
     top: 100%;
