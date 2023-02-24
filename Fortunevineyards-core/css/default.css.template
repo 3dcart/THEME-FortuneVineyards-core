@@ -16,6 +16,9 @@ position:static;
 width:auto;
 height:auto;
 }
+.breadcrumnb {
+    padding-top: 35px;
+}
 .homepage-blog-posts .post-image-container img {
     height: 200px;
 }
