@@ -1,6 +1,7 @@
 /*
 ** Bootstrap over-rides
 */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700|Quicksand:500,700&display=swap');
 #skip a
 {
 position:absolute;
@@ -15,9 +16,6 @@ overflow:hidden;
 position:static;
 width:auto;
 height:auto;
-}
-.breadcrumnb {
-    padding-top: 35px;
 }
 .homepage-blog-posts .post-image-container img {
     height: 200px;
@@ -34,10 +32,27 @@ height:auto;
 .product-items.productList .product-item .img a {
     position: initial;
 }
+.home-page .flexslider .slides img {
+    width: 100%;
+}
+.antiCls { 
+    visibility: hidden; 
+}
+.breadcrumnb ol li>a {
+    color: #fff;
+}
 @media (max-width: 991px){
 .product-items.productList .product-item .img {
     padding-right: 0;
     width: 32%;
+}
+}
+@media(min-width:1024px){
+.site-container {
+    display: flex;
+}
+.page-content {
+    flex: 1 0 auto;
 }
 }
 section#message p.notice, section#error p.notice {
@@ -615,6 +630,7 @@ ul.extrapages li a {
 }
 .copyright_txt a {
     color: #[footer-text-color];
+    text-decoration:underline;
 }
 @media(max-width: 767px) {
     .copyright * {
