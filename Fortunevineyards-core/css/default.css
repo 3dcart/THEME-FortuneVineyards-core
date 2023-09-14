@@ -20,6 +20,7 @@ height:auto;
 .homepage-blog-posts .post-image-container img {
     height: 200px;
 }
+.search-mobile{display:none !important}
 .homepage-blog-posts div#postContent {
     height: 127px;
 }

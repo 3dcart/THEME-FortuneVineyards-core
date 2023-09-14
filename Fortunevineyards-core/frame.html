@@ -78,7 +78,7 @@
                                 <!--START: login-->
                                 <li class="hidden-sm"><a href="/myaccount.asp"><span role="presentation" class="icon-user"></span> [frame_myaccount-link-text]  | Hi Sign in</a></li>
                                 <!--END: login-->
-                                <li><button type="submit" class="search-submit btn" data-toggle="modal" data-target="#searchModal"><span role="presentation" class="icon-search"></span></button></li>
+                                <li><button type="submit" class="search-submit btn search-mobile" data-toggle="modal" data-target="#searchModal"><span role="presentation" class="icon-search"></span></button></li>
                                 <li><a href="#" id="mobile-menu-trigger2" class="visible-sm"><span role="presentation" class="icon-menu"></span></a></li>
                                 <li style="padding:0;"><a href="/view_cart.asp"><span role="presentation" class="icon-shopping-bag"></span> <!-- [frame_ITEMSINCART-text]  -->( [ITEMSINCART] )</a></li>
                             </ul>
@@ -103,7 +103,7 @@
                         <!-- <a href="#" data-toggle="modal" data-target="#searchModal"><span role="presentation" class="icon-search"></span></a> -->
                     </div>
                     <div class="clear"></div>
-                    <div class="col-xs-12 visible-sm visible-xs" id="search-mobile">
+                    <div class="col-xs-12 visible-sm visible-xs search-mobile" id="search-mobile">
 					<div id="searchBox" class="searchBox">
                         <form method="get" name="searchForm" action="search.asp">
                             <div class="search-form">
@@ -284,6 +284,7 @@
                         </form>
                         <div class="clear"></div>
                     </div>
+                    <style>.search-mobile{display:block !important}</style>
                     <!--END: FRAME_SEARCH-->
                 </div>
             </div>
