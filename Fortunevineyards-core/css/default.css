@@ -1445,6 +1445,20 @@ button.close {
         opacity:0;
     }
 }
+@media(max-width:991px){
+    .row-margin-top{
+        padding-top:10px;
+    }
+    .full-header {
+        position: initial;
+    }
+    .logo {
+        height: auto;
+    }
+    .logo img {
+        position: static;
+    }
+}
 .radio-format > input[type="radio"]:checked + label.radio-option {
     border: 2px solid #ac9356;
     background-color: transparent;
